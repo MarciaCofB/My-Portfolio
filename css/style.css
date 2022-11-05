@@ -3,11 +3,19 @@
 }
 
 body {
-  display:flex;
+  display:grid;
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template: 
+    "navBar"
+    "banner"
+    "about"
+    "work"
+    "contact"
 }
 
 h1,
@@ -24,17 +32,33 @@ p {
 }
 
 .page-wrapper{
-  display:flex;
+  
+  
   
   
 }
 
 .hero-banner{
+  grid-area:banner;
 
 }
 
 header{
+  grid-area:navBar;
 
 }
+
+#about{
+  grid-area:about;
+}
+
+#work{
+  grid-area:work;
+}
+
+#contact{
+  grid-area:contact;
+}
+
 
 /*5 rows and 4 columns*
