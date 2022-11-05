@@ -8,14 +8,14 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 20% 20% 20% 20% 20%;
   grid-template: 
-    "navBar"
-    "banner"
-    "about"
-    "work"
-    "contact"
+    "navBar navBar navBar navBar"
+    "banner banner banner banner"
+    "about about about about"
+    "work work work work"
+    "contact contact contact contact"
 }
 
 h1,
@@ -44,8 +44,15 @@ p {
 }
 
 header{
+  justify-content:space-around;
   grid-area:navBar;
+  
+  
 
+}
+
+nav{
+  justify-content:space-around;
 }
 
 #about{
