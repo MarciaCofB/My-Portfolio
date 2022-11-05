@@ -3,19 +3,20 @@
 }
 
 body {
+  height:100%;
   display:grid;
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template: 
-    "navBar navBar navBar navBar"
-    "banner banner banner banner"
-    "about about about about"
-    "work work work work"
-    "contact contact contact contact"
+    "navBar"
+    "banner"
+    "about"
+    "work"
+    "contact"
 }
 
 h1,
@@ -25,6 +26,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  
 }
 
 p {
@@ -32,7 +34,8 @@ p {
 }
 
 .page-wrapper{
-  
+  margin-right:5%;
+  line-height:6;
   
   
   
@@ -40,31 +43,51 @@ p {
 
 .hero-banner{
   grid-area:banner;
+  width:100%;
+  background-color:purple;
 
 }
 
 header{
-  justify-content:space-around;
+  
   grid-area:navBar;
+  background-color:pink;
+  align-content:center;
+  display:flex;
+  width:100%;
+  
+  
   
   
 
 }
 
 nav{
-  justify-content:space-around;
+  align-content:center;
+ 
+  flex-direction:flex-end;
+  
 }
 
 #about{
   grid-area:about;
+  width:100%;
+  background-color:red;
+  
 }
 
 #work{
   grid-area:work;
+  width:100%;
+  background-color:green;
+  grid-row: 3 / 5;
 }
 
 #contact{
   grid-area:contact;
+  width:100%;
+  background-color:orange;
+  
 }
 
 
